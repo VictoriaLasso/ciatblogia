@@ -2,22 +2,17 @@
 <html>
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>CIAT Teatridanza</title>
-
     <link rel="alternate" type="application/rss+xml" title="[!titulo] RSS Feed" href="[!urlblog]/index.xml" />
     <link rel="pingback" href="[!urlblog]/no" />
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -28,14 +23,9 @@
             user-select: none;
         }
 
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        
-
-        /* GLOBAL STYLES
--------------------------------------------------- */
-        /* Padding below the footer and lighter body text */
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
 
         body {
             padding-top: 10rem;
@@ -44,11 +34,15 @@
             background-color: #000000;
         }
 
-
         /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
         .badge-dark {
             background-color: #cc0000 !important;
+        }
+
+        .badge-dark a {
+            background-color: #cc0000 !important;
+            color: #ffffff !important;
         }
 
         .badge-info {
@@ -90,7 +84,6 @@
 
         /* MARKETING CONTENT
   -------------------------------------------------- */
-
         /* Center align the text within the three columns below the carousel */
         .marketing .col-lg-4 {
             margin-bottom: 1.5rem;
@@ -106,10 +99,8 @@
             margin-left: .75rem;
         }
 
-
         /* Featurettes
   ------------------------- */
-
         .featurette-divider {
             margin: 5rem 0;
             /* Space out the Bootstrap <hr> more */
@@ -122,66 +113,100 @@
             letter-spacing: -.05rem;
         }
 
+        /* Bump up size of carousel content */
+        .carousel-caption p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
 
-        /* RESPONSIVE CSS
-  -------------------------------------------------- */
+        .featurette-heading {
+            font-size: 50px;
+        }
 
+        .featurette-heading {
+            margin-top: 7rem;
+        }
 
-            /* Bump up size of carousel content */
-            .carousel-caption p {
-                margin-bottom: 1.25rem;
-                font-size: 1.25rem;
-                line-height: 1.4;
+        .carousel-multi-item-2 .col-md-3 {
+            float: left;
+            width: 20%;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        .card {
+            background-color: #000000;
+            vertical-align: middle;
+        }
+
+        .carousel-multi-item-2 .card img {
+            border-radius: 2px;
+            max-width: 100%;
+        }
+
+        a {
+            background-color: #cc0000 !important;
+            color: #ffffff !important;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next,
+        .black-text {
+            background-color: transparent !important;
+            color: transparent !important;
+        }
+
+        [class*="minicarrusel"] {
+            height: 19rem !important;
+        }
+
+        [class*="minicarrusel2"] {
+            height: 32rem !important;
+        }
+
+        @media only screen and (max-width: 750px) {
+
+            /* For mobile phones: */
+            body {
+                padding-top: 0rem !important;
+                padding-bottom: 3rem;
+                width: 160%;
             }
 
-            .featurette-heading {
-                font-size: 50px;
+            [class*="col-"] {
+                width: 100% !important;
             }
 
-            .featurette-heading {
-                margin-top: 7rem;
+            [class*="minicarrusel"] {
+                height: 67rem !important;
             }
 
-            .carousel-multi-item-2 .col-md-3 {
-                float: left;
-                width: 20%;
-                max-width: 100%;
-                height: auto !important;
+            [class*="minicarrusel2"] {
+                height: 97rem !important;
             }
 
-            .card {
-                background-color: #000000;
-                vertical-align: middle;
+            [class*="video1"] {
+                margin-top: 10rem !important;
+                margin-left: 0rem !important;
+                margin-bottom: 0rem !important;
+                margin-right: 0rem !important;
             }
 
-            .carousel-multi-item-2 .card img {
-                border-radius: 2px;
-                max-width: 100%;
-
+            [class*="carruselGrande"] {
+                width: 100% !important;
+                text-align: center;
+                left: 0% !important;
             }
-            [class*="minicarrusel"]  {
-                    height: 19rem!important;
-                }
-                [class*="minicarrusel2"]  {
-                    height: 32rem!important;
-                }
-            @media only screen and (max-width: 768px) {
-                /* For mobile phones: */
-                [class*="col-"] {
-                    width: 100%!important;
-                }
 
-                [class*="minicarrusel"]  {
-                    height: 67rem!important;
-                }
-                [class*="minicarrusel2"]  {
-                    height: 97rem!important;
-                }
-                [class*="video1"]  {
-                    margin-top: 10rem!important;
-                }
-
+            [class*="navbar"] {
+                position: relative !important;
             }
+
+            [class*="img-fluid"] {
+                width: 80% !important;
+            }
+        }
     </style>
 </head>
 
@@ -195,11 +220,8 @@
                 <h2 style="font-size: 1.8rem!important;  color:#000!important;">25 Años Titiridanzando</h2>
             </a>
         </nav>
-
     </header>
-
     <main role="main">
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel"
             style="margin-top: 7rem; background-image: url(https://i.pinimg.com/originals/b9/f9/b4/b9f9b4546070dda6269f734dd5789331.gif);">
             <ol class="carousel-indicators">
@@ -220,10 +242,8 @@
                 <li data-target="#myCarousel" data-slide-to="14"></li>
                 <li data-target="#myCarousel" data-slide-to="15"></li>
             </ol>
-            <div class="carousel-inner" style="width: 50%; text-align: center; left: 25%;">
-
+            <div class="carousel-inner carruselGrande" style="width: 50%; text-align: center; left: 25%;">
                 <div class="carousel-item active">
-
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
@@ -231,11 +251,8 @@
                             src="https://lh3.google.com/u/0/d/1-zJBl8ARrXwVUtIDzDWdm0oPWdniVvjY=w1920-h942-iv1"
                             alt="slide">
                     </svg>
-
                 </div>
-
                 <div class="carousel-item">
-
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
@@ -243,7 +260,6 @@
                             src="https://lh3.google.com/u/0/d/1EXfIHcw10_UpdVWuylXVFvL4E5U4_bvC=w1920-h508-iv1"
                             alt="slide">
                     </svg>
-
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -253,11 +269,6 @@
                             src="https://lh3.google.com/u/0/d/1onkJYVX7DT1sZnYFTiv2_kmppAkKm2_h=w1309-h942-iv2"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -267,11 +278,6 @@
                             src="https://lh3.google.com/u/0/d/1OlDX7y3Te5xEg9vb_CfL_wk1q7hU4fXR=w1309-h942-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -281,11 +287,6 @@
                             src="https://lh3.google.com/u/0/d/1cBtQCO6C0_jgDZmgfXh9cGifYXs0AFEl=w1309-h942-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -295,11 +296,6 @@
                             src="https://lh3.google.com/u/0/d/1lGPJIhzwfFCf3X3EdsEGhmOhlJI7RRqZ=w1309-h942-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -309,11 +305,6 @@
                             src="https://lh3.google.com/u/0/d/1baUOvGzNsHQa0fAHMXrZajU5lPlcyYWd=w1920-h882-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -323,11 +314,6 @@
                             src="https://lh3.google.com/u/0/d/1Jp4dEx5ulXvqyYiQAOF_0jcz8NzR5wwt=w1309-h882-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -337,11 +323,6 @@
                             src="https://lh3.google.com/u/0/d/1PzWA6IVvl9RsmFAL_oUGnciJsZwWLbPH=w1309-h882-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -351,11 +332,6 @@
                             src="https://lh3.google.com/u/0/d/1gWreUlJk81I3Wrh2oyzimTwoqU3c55K-=w1309-h882-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -365,7 +341,6 @@
                             src="https://lh3.google.com/u/0/d/1qe6pejG4Zr7b7O1hNcghg3BvFctFQjZD=w1920-h508-iv1"
                             alt="slide">
                     </svg>
-
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -375,10 +350,6 @@
                             src="https://lh3.google.com/u/0/d/1V4O9EIGEIYqJS8WAnA8rs9VtYNtC9mfu=w1920-h508-iv1"
                             alt="slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -388,7 +359,6 @@
                             src="https://lh3.google.com/u/0/d/1EnVK_FtIKsksPxsTgj_97FxOxhlITW6L=w1309-h942-iv1"
                             alt="slide">
                     </svg>
-
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -411,7 +381,6 @@
                             src="https://lh3.google.com/u/0/d/1OPnF7NZdilxaNVhuczsaSJ9-1qIyX4-s=w1309-h882-iv2"
                             alt="slide">
                     </svg>
-
                 </div>
                 <div class="carousel-item">
                     <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
@@ -421,11 +390,8 @@
                             src="https://lh3.google.com/u/0/d/1pf3YqZcsaKBCgBhBux8OTETr0t1h_do0=w1920-h508-iv1"
                             alt="slide">
                     </svg>
-
                 </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            </div> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
@@ -434,16 +400,15 @@
                 <span class="sr-only">Próxima</span>
             </a>
         </div>
-
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex align-items-center justify-content-center p-3 py-2 mb-2 rounded"
                     style="font-size: 2em">
                     <!--Carousel Wrapper-->
-                    <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2 minicarusel"
+                    <div id="multi-item-example"
+                        class="carousel slide carousel-multi-item carousel-multi-item-2 minicarusel"
                         data-ride="carousel" style="width:100%!important;">
-
                         <!--Controls-->
                         <div class="controls-top">
                             <a class="black-text" href="#multi-item-example" data-slide="prev"><i
@@ -452,14 +417,10 @@
                                     class="fas fa-angle-right fa-3x pl-3"></i></a>
                         </div>
                         <!--/.Controls-->
-
                         <!--Slides-->
                         <div class="carousel-inner" role="listbox">
-
                             <!--First slide-->
-                            <div class="carousel-item multi active minicarrusel "
-                                style="width:100%!important;">
-
+                            <div class="carousel-item multi active minicarrusel " style="width:100%!important;">
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid"
@@ -467,7 +428,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid"
@@ -475,7 +435,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid"
@@ -483,8 +442,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid"
@@ -492,7 +449,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid"
@@ -501,18 +457,14 @@
                                     </div>
                                 </div>
 
-
                             </div>
                             <!--/.First slide-->
-
                             <!--Second slide-->
                             <div class="carousel-item multi minicarrusel2" style="width:100%;">
-
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                         src="https://lh3.google.com/u/0/d/1KXFBOCAtqIcVhWj-BmxUqkCFAyVPWlKo=w1920-h882-iv2"
+                                            src="https://lh3.google.com/u/0/d/1KXFBOCAtqIcVhWj-BmxUqkCFAyVPWlKo=w1920-h882-iv2"
                                             alt="Card image cap">
                                     </div>
                                 </div>
@@ -523,7 +475,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid" style="height: 19rem; width: 80%;"
@@ -531,7 +482,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid" style="height: 19rem; width: 80%;"
@@ -539,7 +489,6 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
                                 <div class="col-md-3 ">
                                     <div class="card">
                                         <img class="img-fluid" style="height: 19rem; width: 80%;"
@@ -547,21 +496,16 @@
                                             alt="Card image cap">
                                     </div>
                                 </div>
-
-
                             </div>
                             <!--/.Second slide-->
-
-
-
                         </div>
                         <!--/.Slides-->
-
                     </div>
                     <!--/.Carousel Wrapper-->
-
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         <div class="row video1" style="margin: 5rem;">
             <div class="col-lg-12">
@@ -572,21 +516,12 @@
                 </div>
             </div>
         </div>
-        <!-- Marketing messaging and featurettes
-  ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
         <div class="container marketing">
-
-
             <div class="row">
                 <div class="col-lg-10  align-items-center justify-content-center ">
-
-
                     <!--<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>-->
                     <div class="col-md-12 enlaces">
                         [!contenido]
-
                         [!inicio_articuloportada]
                         <h2 class="featurette-heading"><a class="badge badge-dark" href="[!urlpermalink]">[!titulo]</a>
                         </h2>
@@ -595,11 +530,8 @@
                         <p class="lead">[!texto]</p>
                         <span class="lead">[!comentarios]</span>
                         <span class="float-right"><a href="[!urlpermalink]" class="badge badge-white">Más...</a></span>
-                        <div class="cleared"></div>
-                        [!fin_articuloportada]
-
+                        <div class="cleared"></div> [!fin_articuloportada]
                     </div>
-
                     <div class="col-md-12 enlaces">
                         [!inicio_articulo]
                         <h2 class="featurette-heading"><a class="badge badge-dark" href="[!urlpermalink]">[!titulo]</a>
@@ -607,43 +539,98 @@
                         <!--<p class="text-muted">por [!autor] el [!fecha], en [!tema]</p>-->
                         <p class="text-muted">[!fecha]</p>
                         <p class="lead">[!texto]</p>
-
                         <div id="comments">
                             [!comentarios]
                         </div> <!-- Closes Comment -->
                         [!fin_articulo]
-
                     </div>
                 </div><!-- /.col-lg-4 -->
-
-
             </div><!-- /.row -->
-
-
             <!-- START THE FEATURETTES -->
-
             <hr class="featurette-divider">
-
             <div class="row featurette">
                 <div class="col-md-12 order-md-1">
-
                     <div class="description badge-dark" style=" padding:1rem;">
                         <h2>Hola!</h2>
                         <p style="background-image: url();">Teatridanza Escogió su puerto en las Azules Montañas de
                             Bogotá, allí rodeado de un verde intenso y ambientado por el canto de los pájaros inaugura
-                            su sede el:
-                            CIAT, EL TEATRO DE LA MONTAÑA, donde todos los Sábados a las tres de la tarde y en forma
-                            gratuita se comparte con los habitantes de la montaña presentaciones Artísticas de Grupos
-                            Profesionales en la mañana del sábado realizamos el taller de Juegos y Artes
-                            Interpretativas.
-                            Se pueden comunicar a los siguientes correos: ciatteatridanza@gmail.com,
+                            su sede el: CIAT, EL TEATRO DE LA MONTAÑA, donde todos los Sábados a las tres de la tarde y
+                            en forma gratuita se comparte con los habitantes de la montaña presentaciones Artísticas de
+                            Grupos Profesionales en la mañana del sábado realizamos el taller de Juegos y Artes
+                            Interpretativas. Se pueden comunicar a los siguientes correos: ciatteatridanza@gmail.com,
                             teatridanza@hotmail.com, allí les daremos las coordenadas para que arriben al Teatro de la
                             Montaña.</p>
                     </div>
                 </div>
                 <div class="col-md-12 order-md-2">
-
-                    <h3 class="featurette-heading">V&iacute;deos</h3>
+                    <h3 class="featurette-heading">Historia</h3>
+                    <img src="https://lh3.google.com/u/0/d/1-aj54B3rp7eRU1uuIjH-8ZL_aea-vQBY=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/11bLb5bk_agTG_yFUi2aQwtAdB4gL11xF=w1920-h1019-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1fvalxu6mADOc8m-aWgp1SxUyYdafCS3F=w1920-h1019-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1A90Qiv8QLYePIrQy92bcAde1XLOUScag=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1X-nYPijtkwthgJMlEC7Vp3XuXkLn7FYE=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1LjJr6v91owu4nEVXqVOnnUovx0T06zMp=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/10lVZtWDya1QIMP1mhgP0tgBMByUhdR7s=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1V8SrLS1juqp3YVXrR4hkKMD0obBdh_hA=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1SdabUY_ZJwmr-nI7_BeLkgcgaFHkmWIY=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1LPeG_GhGiOUnZm5VahJf53Fm48WxUM9y=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1KmyHVqPiZGB8AKFJOx-oiEwvUUpZteDY=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1hLaM0QyTk5EfGWcTmUz2hB0dSHlQnI0P=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1pFlRo_5aTwuvwARXyVtTlyasue6O_Ssy=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/19d6qE5eRcly2PBGbF12i5BJu1HwzHHNu=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1KnRX5pXlvLyTmbUUqw215Q_ediGsLGT1=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1Fs05Nx940Vw65IpBINUBP5YNR7dRzYvj=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1k4ve5xNAmoyqFOaAVEzL1thOIfYK8QWV=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1QeaHn6JeVM4B1_1vKU1JhizYCpICb5o6=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1puHtLBvLVnoVNxtMcxECr8EKaSIj50aS=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1a76v09AOvsGVVGBGiN8cmqKgUSyOMAU6=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/16KemZSpLPwXQspDn_zQ9aPOrzaL7FcYW=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1cJZSBCq2dU5U1x_z4bkSqbEzHD6LHCBO=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1qU12UfRCNJ3gks_17jEpoAmYKMCov2J_=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1XJAY8FjwGz-24U5x98yLT-0BfaKZ-Dgd=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1GOV8ILpmeG0MVRgmW9-Hy8IRtjvxmnah=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1sxEuQE8X8ySSRfgd8HUMpVSQv1BEsTRY=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1Qd3DkLUmGcoDMalCO2Pw0GqPn2YYSzvW=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1AWmLUVUElVcb_x7FYwF77o7UxbcllVM7=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1NWTQWSeSax22lQuAEOGi3ULPm9hNcUBF=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1gz9c9A2isJ66cuwBN2NkfS8pij0L83_y=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/0/d/1ga_5k-SLrlUQD3MKHuSbguURDLy3tIIt=w1920-h882-iv1"
+                        width="20%">
+                    <img src="https://lh3.google.com/u/1/d/1oln0DZ-ZuOgUtQfqKVs-Z7vVEb0I63gb=w1920-h888-iv1"
+                        width="20%">
+                </div>
+                <div class="col-md-12 order-md-3">
+                    <h3 class="featurette-heading">Vídeos</h3>
                     <iframe
                         src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3135571029813012%2F&show_text=false&width=734&appId=205624399466174&height=411"
                         style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
@@ -668,11 +655,13 @@
                         style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
                         allow="encrypted-media"></iframe>
                 </div>
-                <div class="col-md-4 order-md-3">
+                <div class="col-md-4 order-md-4">
                     <h3 class="featurette-heading">Temas</h3>
                     <p class="text-muted"></p>
                     <nav class="nav flex-column">
                         <a class="nav-link active" href="http://teatridanza.blogia.com">Programación</a>
+                        <a class="nav-link"
+                            href="http://teatridanza.blogia.com/2020/092901-historia-teatro.php">Historia</a>
                         <a class="nav-link" href="http://teatridanza.blogia.com/temas/obras-teatridanza.php">Obras
                             Teatridanza</a>
                         <a class="nav-link" href="http://teatridanza.blogia.com/2011/101002-mision.php">Misión</a>
@@ -680,40 +669,45 @@
                         <a class="nav-link" href="https://goo.gl/maps/PgRQhadawQuATf5H7" target="_blank">Contáctenos
                         </a>
                     </nav>
-
                 </div>
-
-                <div class="col-md-4 order-md-4">
+                <div class="col-md-4 order-md-5">
                     <h3 class="featurette-heading">Prensa</h3>
                     <p class="text-muted">Algunos sitios recomendados</p>
                     <ul class="nav flex-column">[!listaenlaces]</ul>
                 </div>
-                <div class="col-md-4 order-md-5">
+                <div class="col-md-4 order-md-6">
                     <h3 class="featurette-heading">Secciones</h3>
                     <p class="text-muted">Todas las secciones del blog</p>
                     <ul class="nav flex-column">[!listamenu_sinul] </ul>
                 </div>
-
-                <div class="col-md-6 order-md-6">
-                    <h3 class="featurette-heading">¿Buscas algo?</h3>
-                    <p class="text-muted">Utiliza este buscador:</p>
-                    <form method="get" id="searchform" action="[!urlblog]/">
-                        <p>
-                            <input type="text" value="Escribe tu búsqueda..." name="s" id="searchbox"
-                                onfocus="this.value=''" />
-                            <input type="submit" class="submitbutton" value="Buscar" />
-                        </p>
-                    </form>
-                    <p class="lead">Si no encuentras lo que buscas escríbenos un comentario.</p>
-                </div>
                 <div class="col-md-6 order-md-7">
+                    <div>
+                        <h3 class="featurette-heading">Donaciones Voluntarias</h3>
+                        <p class="text-muted"># Cuenta Celular 3102973343</p>
+                        <img style="width:25rem; background-color: #ffffff;"
+                            src="https://tussorpresas.com/wp-content/uploads/2020/04/Nequi-Tus-Sorpresas.png" />
+                    </div>
+                    <div>
+                        <h3 class="featurette-heading">¿Buscas algo?</h3>
+                        <p class="text-muted">Utiliza este buscador:</p>
+                        <form method="get" id="searchform" action="[!urlblog]/">
+                            <p>
+                                <input type="text" value="Escribe tu búsqueda..." name="s" id="searchbox"
+                                    onfocus="this.value=''" />
+                                <input type="submit" class="submitbutton" value="Buscar" />
+                            </p>
+                        </form>
+                        <p class="lead">Si no encuentras lo que buscas escríbenos un comentario.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-8">
                     <h3 class="featurette-heading">Redes Sociales</h3>
                     <p class="text-muted"></p>
                     <ul class="nav">
                         <li><a href="https://www.facebook.com/ciat.teatridanza" target="_blank"><img
                                     src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-64.png"
                                     class="img-fluid" /></a></li>
-                        <li><a href="https://www.instagram.com/ciatteatridanza/" target="_blank"><img
+                        <li><a href="https://www.instagram.com/teatridanza/" target="_blank"><img
                                     src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-64.png"
                                     class="img-fluid" /></a></li>
                         <li><a href="https://www.youtube.com/channel/UCq1EYKVMMpo-4Ohp4Knt1Wg/featured"
@@ -732,34 +726,23 @@
                     </div>
                 </div>
             </div>
-
-
-
-            <div class="row featurette">
-                <div class="col-md-12 order-md-1">
-                    <h3 class="featurette-heading">Ubicación</h3>
-                    <p class="text-muted"></p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.405091240727!2d-74.0172317!3d4.6649636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1fb29923298cbfe!2sCIAT%20TEATRIDANZA!5e0!3m2!1ses-419!2sco!4v1598669999247!5m2!1ses-419!2sco"
-                        style="width:100%!important; min-height: 500px;" frameborder="0" style="border:0;"
-                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-
+            <div class="col-md-12">
+                <h3 class="featurette-heading">Ubicación</h3>
+                <p class="text-muted"></p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.405091240727!2d-74.0172317!3d4.6649636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1fb29923298cbfe!2sCIAT%20TEATRIDANZA!5e0!3m2!1ses-419!2sco!4v1598669999247!5m2!1ses-419!2sco"
+                    style="width:100%!important; min-height: 500px;" frameborder="0" style="border:0;"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <hr class="featurette-divider">
             <!-- /END THE FEATURETTES -->
-
         </div><!-- /.container -->
-
-
         <!-- FOOTER -->
-
         <div class="row featurette">
-            <div class="col-md-3 order-md-1">
+            <div class="col-md-3">
                 <p class="muted text-white">© 2020 CIAT Teatridanza · </p>
             </div>
-            <div class="col-md-3 order-md-2">
-
+            <div class="col-md-3">
                 <div class="col-md-12" style="max-height: 200px; overflow: auto;">
                     <h2>Contador de visitas</h2>
                     <p>
@@ -776,12 +759,11 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-3 order-md-3">
+            <div class="col-md-3">
                 <p class="muted text-white">[!pieblogia]</p>
             </div>
             <div class="col-md-3 order-md-4">
                 <p class="float-right">
-
                 <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 rounded"
                     style="font-size: 2em">
                     <a href="#">
@@ -790,8 +772,8 @@
                             <path fill-rule="evenodd"
                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z">
                             </path>Back to top
+                        </svg>
                     </a>
-                    </svg>
                 </div>
                 </p>
             </div>
@@ -802,22 +784,10 @@
         crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
         $(document).ready(function () {
-            $('.navbar-nav li').addClass('nav-item');
-            $('.navbar-nav a').addClass('nav-link');
-            $('.featurette-heading a').addClass('badge-dark');
-            $('.muted a').addClass('badge-dark');
-            $('.topTitle a').addClass('badge-dark');
-            $('.float-right a').addClass('badge-dark');
-            $('.flex-column li').addClass('nav-item');
-            $('.flex-column a').addClass('nav-link');
-            $('.flex-column a').addClass('badge-dark');
-            $('.flex-column a').addClass('nav-link');
-            $('.enlaces a').addClass('badge-dark');
-            $('.enlaces a').addClass('nav-link');
-            $('.enlaces li').addClass('nav-item');
-            $('.enlaces ul').addClass('nav flex-column');
+            $('.navbar-nav li').addClass('nav-item'); $('.navbar-nav a').addClass('nav-link'); $('.featurette-heading a').addClass('badge-dark'); $('.muted a').addClass('badge-dark'); $('.topTitle a').addClass('badge-dark'); $('.float-right a').addClass('badge-dark'); $('.flex-column li').addClass('nav-item'); $('.flex-column a').addClass('nav-link'); $('.flex-column a').addClass('badge-dark'); $('.flex-column a').addClass('nav-link'); $('.enlaces a').addClass('badge-dark'); $('.enlaces a').addClass('nav-link'); $('.enlaces li').addClass('nav-item'); $('.enlaces ul').addClass('nav flex-column');
+
+            $('a').addClass('badge-dark');
         });
     </script>
 
