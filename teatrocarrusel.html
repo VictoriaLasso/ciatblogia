@@ -14,208 +14,90 @@
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+        .bd-placeholder-img {  font-size: 1.125rem;   text-anchor: middle;   -webkit-user-select: none;   -moz-user-select: none;   -ms-user-select: none;   user-select: none; }
 
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
+        .bd-placeholder-img-lg {  font-size: 3.5rem; }
 
-        body {
-            padding-top: 10rem;
-            padding-bottom: 3rem;
-            color: #ffffff;
-            background-color: #000000;
-        }
+        body {  padding-top: 10rem;   padding-bottom: 3rem;   color: #ffffff;   background-color: #000000; }
 
         /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-        .badge-dark {
-            background-color: #cc0000 !important;
-        }
+        .badge-dark {  background-color: #cc0000 !important; }
 
-        .badge-dark a {
-            background-color: #cc0000 !important;
-            color: #ffffff !important;
-        }
+        .badge-dark a {  background-color: #cc0000 !important;   color: #ffffff !important; }
 
-        .badge-info {
-            background-color: #cc0000 !important;
-        }
+        .badge-info {  background-color: #cc0000 !important; }
 
         /* Carousel base class */
-        .carousel {
-            margin-bottom: 4rem;
-        }
+        .carousel {  margin-bottom: 4rem; }
 
         /* Since positioning the image, we need to help out the caption */
-        .carousel-caption {
-            bottom: 3rem;
-            z-index: 10;
-        }
+        .carousel-caption {  bottom: 3rem;   z-index: 10; }
 
         /* Declare heights because of positioning of img element */
-        .carousel-item {
-            height: 32rem;
-        }
+        .carousel-item {  height: 32rem; }
 
-        .carousel-item>img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 32rem;
-        }
+        .carousel-item>img {  position: absolute;   top: 0;   left: 0;   min-width: 100%;   height: 32rem; }
 
         /* Declare heights because of positioning of img element */
-        .multi {
-            height: 15rem !important;
-        }
+        .multi {  height: 15rem !important; }
 
-        .multi>img {
-            height: 15rem !important;
-        }
+        .multi>img {  height: 15rem !important; }
 
         /* MARKETING CONTENT
   -------------------------------------------------- */
         /* Center align the text within the three columns below the carousel */
-        .marketing .col-lg-4 {
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
+        .marketing .col-lg-4 {  margin-bottom: 1.5rem;   text-align: center; }
 
-        .marketing h2 {
-            font-weight: 400;
-        }
+        .marketing h2 {  font-weight: 400; }
 
-        .marketing .col-lg-4 p {
-            margin-right: .75rem;
-            margin-left: .75rem;
-        }
+        .marketing .col-lg-4 p {  margin-right: .75rem;   margin-left: .75rem; }
 
         /* Featurettes
   ------------------------- */
-        .featurette-divider {
-            margin: 5rem 0;
-            /* Space out the Bootstrap <hr> more */
-        }
+        .featurette-divider {  margin: 5rem 0;   /* Space out the Bootstrap <hr> more */ }
 
         /* Thin out the marketing headings */
-        .featurette-heading {
-            font-weight: 300;
-            line-height: 1;
-            letter-spacing: -.05rem;
-        }
+        .featurette-heading {  font-weight: 300;   line-height: 1;   letter-spacing: -.05rem; }
 
         /* Bump up size of carousel content */
-        .carousel-caption p {
-            margin-bottom: 1.25rem;
-            font-size: 1.25rem;
-            line-height: 1.4;
-        }
+        .carousel-caption p {  margin-bottom: 1.25rem;   font-size: 1.25rem;   line-height: 1.4; }
 
-        .featurette-heading {
-            font-size: 50px;
-        }
+        .featurette-heading {  font-size: 50px; }
 
-        .featurette-heading {
-            margin-top: 7rem;
-        }
+        .featurette-heading {  margin-top: 7rem; }
 
-        .carousel-multi-item-2 .col-md-3 {
-            float: left;
-            width: 20%;
-            max-width: 100%;
-            height: auto !important;
-        }
+        .carousel-multi-item-2 .col-md-3 {  float: left;   width: 20%;   max-width: 100%;   height: auto !important; }
 
-        .card {
-            background-color: #000000;
-            vertical-align: middle;
-        }
+        .card {  background-color: #000000;   vertical-align: middle; }
 
-        .carousel-multi-item-2 .card img {
-            border-radius: 2px;
-            max-width: 100%;
-        }
+        .carousel-multi-item-2 .card img {  border-radius: 2px;   max-width: 100%; }
 
-        a {
-            background-color: #cc0000 !important;
-            color: #ffffff !important;
-        }
+        a {  background-color: #cc0000 !important;   color: #ffffff !important; }
 
         .carousel-control-prev,
         .carousel-control-next,
-        .black-text {
-            background-color: transparent !important;
-            color: transparent !important;
-        }
+        .black-text {  background-color: transparent !important;   color: transparent !important; }
 
-        [class*="minicarrusel"] {
-            height: 19rem !important;
-        }
+        [class*="minicarrusel"] {  height: 19rem !important; }
 
-        [class*="minicarrusel2"] {
-            height: 32rem !important;
-        }
-
-        @media only screen and (max-width: 750px) {
-
-            /* For mobile phones: */
-            body {
-                padding-top: 0rem !important;
-                padding-bottom: 3rem;
-                width: 160%;
-            }
-
-            [class*="col-"] {
-                width: 100% !important;
-            }
-
-            [class*="minicarrusel"] {
-                height: 67rem !important;
-            }
-
-            [class*="minicarrusel2"] {
-                height: 97rem !important;
-            }
-
-            [class*="video1"] {
-                margin-top: 10rem !important;
-                margin-left: 0rem !important;
-                margin-bottom: 0rem !important;
-                margin-right: 0rem !important;
-            }
-
-            [class*="carruselGrande"] {
-                width: 100% !important;
-                text-align: center;
-                left: 0% !important;
-            }
-
-            [class*="navbar"] {
-                position: relative !important;
-            }
-
-            [class*="img-fluid"] {
-                width: 80% !important;
-            }
-        }
+        [class*="minicarrusel2"] {  height: 32rem !important; }
+        @media only screen and (max-width: 750px) {  /* For mobile phones: */
+            body { padding-top: 0rem !important; padding-bottom: 3rem; width: 160%; }
+            [class*="col-"] { width: 100% !important; }
+            [class*="minicarrusel"] {  height: 67rem !important; }
+            [class*="minicarrusel2"] {  height: 97rem !important; }
+            [class*="video1"] { margin-top: 10rem !important; margin-left: 0rem !important; margin-bottom: 0rem !important; margin-right: 0rem !important; }
+            [class*="carruselGrande"] { width: 100% !important; text-align: center; left: 0% !important;}
+            [class*="navbar"] { position: relative !important; }
+            [class*="img-fluid"] {  width: 80% !important; } }
     </style>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top badge-info justify-content-center">
-            <a class="navbar-brand" href="[!urlblog]"
-                style="text-align: center; font-family:Monotype Corsiva, Times, Serif; ">
-                <img src="https://lh3.google.com/u/0/d/1hNOptyTC6OgPlMeAWe0ioBBQSQ1Q5Kou=w1920-h882-iv1" width="250">
+            <a class="navbar-brand" href="[!urlblog]"  style="text-align: center; font-family:Monotype Corsiva, Times, Serif; ">
+                <img src="http://victorialasso.com/teatridanza/imagenes/ciat35.png" width="250">
                 <h1 style="font-size: 2.5rem!important; color:#000!important;">[!titulo]</h1>
                 <h2 style="font-size: 1.8rem!important;  color:#000!important;">25 Años Titiridanzando</h2>
             </a>
@@ -244,151 +126,100 @@
             </ol>
             <div class="carousel-inner carruselGrande" style="width: 50%; text-align: center; left: 25%;">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1-zJBl8ARrXwVUtIDzDWdm0oPWdniVvjY=w1920-h942-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/2018%20CABALLO%20%285%29.JPG" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1EXfIHcw10_UpdVWuylXVFvL4E5U4_bvC=w1920-h508-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-13%20at%2010.03.43%20AM%20%281%29.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1onkJYVX7DT1sZnYFTiv2_kmppAkKm2_h=w1309-h942-iv2"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-31%20at%209.58.02%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1OlDX7y3Te5xEg9vb_CfL_wk1q7hU4fXR=w1309-h942-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-31%20at%209.58.03%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1cBtQCO6C0_jgDZmgfXh9cGifYXs0AFEl=w1309-h942-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-31%20at%209.58.04%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1lGPJIhzwfFCf3X3EdsEGhmOhlJI7RRqZ=w1309-h942-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-31%20at%209.58.04%20AM%20%281%29.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1baUOvGzNsHQa0fAHMXrZajU5lPlcyYWd=w1920-h882-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/ciat26.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1Jp4dEx5ulXvqyYiQAOF_0jcz8NzR5wwt=w1309-h882-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-30%20at%2011.17.18%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1PzWA6IVvl9RsmFAL_oUGnciJsZwWLbPH=w1309-h882-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-30%20at%2011.17.54%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1gWreUlJk81I3Wrh2oyzimTwoqU3c55K-=w1309-h882-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-30%20at%2011.58.19%20AM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1qe6pejG4Zr7b7O1hNcghg3BvFctFQjZD=w1920-h508-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-13%20at%208.45.38%20PM.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1V4O9EIGEIYqJS8WAnA8rs9VtYNtC9mfu=w1920-h508-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/ciat13.jpeg" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1EnVK_FtIKsksPxsTgj_97FxOxhlITW6L=w1309-h942-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/TEATRIDANZA%2CAEIOA%20%283%29.JPG" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1zxL426YxF8K1ym9b7kSy4M8ry5rluT0K=w1920-h508-iv1"
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-13%20at%208.43.49%20PM.jpeg"
                             alt="Third slide">
                     </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1OPnF7NZdilxaNVhuczsaSJ9-1qIyX4-s=w1309-h882-iv2"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/juan.png" alt="slide">
                     </svg>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <svg class="bd-placeholder-img" width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="80%" height="100%" fill="#777" />
-                        <img class="d-block w-100"
-                            src="https://lh3.google.com/u/0/d/1pf3YqZcsaKBCgBhBux8OTETr0t1h_do0=w1920-h508-iv1"
-                            alt="slide">
+                        <img class="d-block w-100"  src="http://victorialasso.com/teatridanza/imagenes/ciat3.jpeg" alt="slide">
                     </svg>
                 </div>
             </div> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -411,10 +242,8 @@
                         data-ride="carousel" style="width:100%!important;">
                         <!--Controls-->
                         <div class="controls-top">
-                            <a class="black-text" href="#multi-item-example" data-slide="prev"><i
-                                    class="fas fa-angle-left fa-3x pr-3"></i></a>
-                            <a class="black-text" href="#multi-item-example" data-slide="next"><i
-                                    class="fas fa-angle-right fa-3x pl-3"></i></a>
+                            <a class="black-text" href="#multi-item-example" data-slide="prev"><i  class="fas fa-angle-left fa-3x pr-3"></i></a>
+                            <a class="black-text" href="#multi-item-example" data-slide="next"><i  class="fas fa-angle-right fa-3x pl-3"></i></a>
                         </div>
                         <!--/.Controls-->
                         <!--Slides-->
@@ -423,37 +252,27 @@
                             <div class="carousel-item multi active minicarrusel " style="width:100%!important;">
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid"
-                                            src="https://lh3.google.com/u/0/d/19Pi_DyPI7AqoQ63XAU6-iEjnIdrmZVhP=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" src="http://victorialasso.com/teatridanza/imagenes/ciat7.jpeg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid"
-                                            src="https://lh3.google.com/u/0/d/1Evw5z-vJduAWtKPaJpIXjjh7d81csMpX=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" src="http://victorialasso.com/teatridanza/imagenes/ciat24.jpeg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid"
-                                            src="https://lh3.google.com/u/0/d/1Ke_H8QAqUJkBHXjfT6yrzWvaRMMsoNQr=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" src="http://victorialasso.com/teatridanza/imagenes/ciat25.jpeg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid"
-                                            src="https://lh3.google.com/u/0/d/1DzE6pOhRfoFTk19BOzUXziN2HvRPtP3o=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" src="http://victorialasso.com/teatridanza/imagenes/ciat36.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid"
-                                            src="https://lh3.google.com/u/0/d/1hgJvcPHz1_wIloDCk0KEtylNF5YFQ_j_=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" src="http://victorialasso.com/teatridanza/imagenes/ciat43.jpg" alt="Card image cap">
                                     </div>
                                 </div>
 
@@ -463,37 +282,27 @@
                             <div class="carousel-item multi minicarrusel2" style="width:100%;">
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                            src="https://lh3.google.com/u/0/d/1KXFBOCAtqIcVhWj-BmxUqkCFAyVPWlKo=w1920-h882-iv2"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" style="height: 19rem; width: 80%;" src="http://victorialasso.com/teatridanza/imagenes/25a%C3%B1os011.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                            src="https://lh3.google.com/u/0/d/1bB4dSdgdPU8VD_4oZJTPHGlNGt0LjvU1=w1920-h942-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" style="height: 19rem; width: 80%;" src="http://victorialasso.com/teatridanza/imagenes/ROSITAENELBOSQUE%20%282%29.JPG" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                            src="https://lh3.google.com/u/0/d/1BGUxrC8mDC6V_gs0D0QgWuCoES83FsKZ=w1309-h942-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" style="height: 19rem; width: 80%;" src="http://victorialasso.com/teatridanza/imagenes/SOLDADITOredondo%5B1%5D.JPG" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                            src="https://lh3.google.com/u/0/d/1M2KtT54uVpSqhzgJBsQ_nxplpsZV7ToB=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" style="height: 19rem; width: 80%;" src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-08-13%20at%208.52.47%20PM.jpeg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="col-md-3 ">
                                     <div class="card">
-                                        <img class="img-fluid" style="height: 19rem; width: 80%;"
-                                            src="https://lh3.google.com/u/0/d/1NVGuxvyvXRqax8gusnUBBhmTZCCmREOU=w1920-h508-iv1"
-                                            alt="Card image cap">
+                                        <img class="img-fluid" style="height: 19rem; width: 80%;" src="http://victorialasso.com/teatridanza/imagenes/GIRAAEIOARED.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                             </div>
@@ -510,9 +319,7 @@
         <div class="row video1" style="margin: 5rem;">
             <div class="col-lg-12">
                 <div class="col-md-12" style="text-align: center;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ewn9MZCg5JM" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ewn9MZCg5JM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -552,122 +359,63 @@
                 <div class="col-md-12 order-md-1">
                     <div class="description badge-dark" style=" padding:1rem;">
                         <h2>Hola!</h2>
-                        <p style="background-image: url();">Teatridanza Escogió su puerto en las Azules Montañas de
-                            Bogotá, allí rodeado de un verde intenso y ambientado por el canto de los pájaros inaugura
-                            su sede el: CIAT, EL TEATRO DE LA MONTAÑA, donde todos los Sábados a las tres de la tarde y
-                            en forma gratuita se comparte con los habitantes de la montaña presentaciones Artísticas de
-                            Grupos Profesionales en la mañana del sábado realizamos el taller de Juegos y Artes
-                            Interpretativas. Se pueden comunicar a los siguientes correos: ciatteatridanza@gmail.com,
-                            teatridanza@hotmail.com, allí les daremos las coordenadas para que arriben al Teatro de la
-                            Montaña.</p>
+                        <p style="background-image: url();">Teatridanza Escogió su puerto en las Azules Montañas de Bogotá, allí rodeado de un verde intenso y ambientado por el canto de los pájaros inaugura su sede el: CIAT, EL TEATRO DE LA MONTAÑA, donde todos los Sábados a las tres de la tarde y en forma gratuita se comparte con los habitantes de la montaña presentaciones Artísticas de Grupos Profesionales en la mañana del sábado realizamos el taller de Juegos y Artes Interpretativas. Se pueden comunicar a los siguientes correos: ciatteatridanza@gmail.com, teatridanza@hotmail.com, allí les daremos las coordenadas para que arriben al Teatro de la Montaña.</p>
                     </div>
                 </div>
                 <div class="col-md-12 order-md-2">
-                    <h3 class="featurette-heading">Historia</h3>
-                    <img src="https://lh3.google.com/u/0/d/1-aj54B3rp7eRU1uuIjH-8ZL_aea-vQBY=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/11bLb5bk_agTG_yFUi2aQwtAdB4gL11xF=w1920-h1019-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1fvalxu6mADOc8m-aWgp1SxUyYdafCS3F=w1920-h1019-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1A90Qiv8QLYePIrQy92bcAde1XLOUScag=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1X-nYPijtkwthgJMlEC7Vp3XuXkLn7FYE=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1LjJr6v91owu4nEVXqVOnnUovx0T06zMp=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/10lVZtWDya1QIMP1mhgP0tgBMByUhdR7s=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1V8SrLS1juqp3YVXrR4hkKMD0obBdh_hA=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1SdabUY_ZJwmr-nI7_BeLkgcgaFHkmWIY=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1LPeG_GhGiOUnZm5VahJf53Fm48WxUM9y=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1KmyHVqPiZGB8AKFJOx-oiEwvUUpZteDY=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1hLaM0QyTk5EfGWcTmUz2hB0dSHlQnI0P=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1pFlRo_5aTwuvwARXyVtTlyasue6O_Ssy=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/19d6qE5eRcly2PBGbF12i5BJu1HwzHHNu=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1KnRX5pXlvLyTmbUUqw215Q_ediGsLGT1=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1Fs05Nx940Vw65IpBINUBP5YNR7dRzYvj=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1k4ve5xNAmoyqFOaAVEzL1thOIfYK8QWV=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1QeaHn6JeVM4B1_1vKU1JhizYCpICb5o6=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1puHtLBvLVnoVNxtMcxECr8EKaSIj50aS=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1a76v09AOvsGVVGBGiN8cmqKgUSyOMAU6=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/16KemZSpLPwXQspDn_zQ9aPOrzaL7FcYW=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1cJZSBCq2dU5U1x_z4bkSqbEzHD6LHCBO=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1qU12UfRCNJ3gks_17jEpoAmYKMCov2J_=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1XJAY8FjwGz-24U5x98yLT-0BfaKZ-Dgd=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1GOV8ILpmeG0MVRgmW9-Hy8IRtjvxmnah=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1sxEuQE8X8ySSRfgd8HUMpVSQv1BEsTRY=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1Qd3DkLUmGcoDMalCO2Pw0GqPn2YYSzvW=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1AWmLUVUElVcb_x7FYwF77o7UxbcllVM7=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1NWTQWSeSax22lQuAEOGi3ULPm9hNcUBF=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1gz9c9A2isJ66cuwBN2NkfS8pij0L83_y=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/0/d/1ga_5k-SLrlUQD3MKHuSbguURDLy3tIIt=w1920-h882-iv1"
-                        width="20%">
-                    <img src="https://lh3.google.com/u/1/d/1oln0DZ-ZuOgUtQfqKVs-Z7vVEb0I63gb=w1920-h888-iv1"
-                        width="20%">
+                    <h3 class="featurette-heading">Historia</h3> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-09-02%20at%204.33.36%20PM.jpeg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-09-02%20at%205.34.51%20PM%20%281%29.jpeg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-09-02%20at%205.34.51%20PM%20%282%29.jpeg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/WhatsApp%20Image%202020-09-02%20at%205.34.51%20PM%20%283%29.jpeg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/J1.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15_0001.S6301645%20%2815%29.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15_0001.S6301645%20%2812%29.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/14S6301338.JPG" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/12_00158%20%285%29.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/19A_00054.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/20A_00053.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/_30_00008.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/14IMG_0028%20%282%29.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/14IMG_0028%20%2810%29_0001.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/14IMG_0028%20%2812%29_0001.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/16escritorio%201087%20%288%29.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15_0001.S6301645%20%2817%29.JPG" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15.S6301645%20%2821%29.JPG" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15.S6301645%20%2822%29.JPG" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15.S6301645%20%2824%29.JPG" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/15teatro2.JPG" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/DSCN5398.JPG" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/DSCN5450.JPG" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%20695_0001.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%20543_0001.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%20530_0001.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%20484_0001.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%201004_0001.jpg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/segundos%20am-pm%2020-05%20231.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/ciat46.jpeg" width="20%"> 
+                    <img src="http://victorialasso.com/teatridanza/imagenes/escritorio%20498.jpg" width="20%">
+                    <img src="http://victorialasso.com/teatridanza/imagenes/ciat47.jpeg" width="20%">
                 </div>
                 <div class="col-md-12 order-md-3">
                     <h3 class="featurette-heading">Vídeos</h3>
-                    <iframe
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3135571029813012%2F&show_text=false&width=734&appId=205624399466174&height=411"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                        allow="encrypted-media" allowFullScreen="true"></iframe>
-                    <iframe src="https://www.youtube.com/embed/CAMJpvrIyuo" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <iframe
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3176272449076203%2F&show_text=false&width=734&appId=205624399466174&height=415"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                        allow="encrypted-media" allowFullScreen="true"></iframe>
-                    <iframe
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3225122560857858%2F&show_text=false&width=734&appId=205624399466174&height=411"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                        allow="encrypted-media" allowFullScreen="true"></iframe>
-                    <iframe
-                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fposts%2F3172971889406259&show_text=false&width=552&appId=205624399466174&height=309"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                        allow="encrypted-media"></iframe>
-                    <iframe
-                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fposts%2F3221800134523434&show_text=false&width=552&appId=205624399466174&height=309"
-                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                        allow="encrypted-media"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3135571029813012%2F&show_text=false&width=734&appId=205624399466174&height=411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                    <iframe src="https://www.youtube.com/embed/CAMJpvrIyuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3176272449076203%2F&show_text=false&width=734&appId=205624399466174&height=415" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fvideos%2F3225122560857858%2F&show_text=false&width=734&appId=205624399466174&height=411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fposts%2F3172971889406259&show_text=false&width=552&appId=205624399466174&height=309" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciat.teatridanza%2Fposts%2F3221800134523434&show_text=false&width=552&appId=205624399466174&height=309" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div class="col-md-4 order-md-4">
                     <h3 class="featurette-heading">Temas</h3>
                     <p class="text-muted"></p>
                     <nav class="nav flex-column">
                         <a class="nav-link active" href="http://teatridanza.blogia.com">Programación</a>
-                        <a class="nav-link"
-                            href="http://teatridanza.blogia.com/2020/092901-historia-teatro.php">Historia</a>
-                        <a class="nav-link" href="http://teatridanza.blogia.com/temas/obras-teatridanza.php">Obras
-                            Teatridanza</a>
+                        <a class="nav-link" href="http://teatridanza.blogia.com/2020/092901-historia-teatro.php">Historia</a>
+                        <a class="nav-link" href="http://teatridanza.blogia.com/temas/obras-teatridanza.php">Obras  Teatridanza</a>
                         <a class="nav-link" href="http://teatridanza.blogia.com/2011/101002-mision.php">Misión</a>
                         <a class="nav-link" href="http://teatridanza.blogia.com/2011/101001-vision.php">Visión</a>
-                        <a class="nav-link" href="https://goo.gl/maps/PgRQhadawQuATf5H7" target="_blank">Contáctenos
-                        </a>
+                        <a class="nav-link" href="https://goo.gl/maps/PgRQhadawQuATf5H7" target="_blank">Contáctenos </a>
                     </nav>
                 </div>
                 <div class="col-md-4 order-md-5">
@@ -684,16 +432,14 @@
                     <div>
                         <h3 class="featurette-heading">Donaciones Voluntarias</h3>
                         <p class="text-muted"># Cuenta Celular 3102973343</p>
-                        <img style="width:25rem; background-color: #ffffff;"
-                            src="https://tussorpresas.com/wp-content/uploads/2020/04/Nequi-Tus-Sorpresas.png" />
+                        <img style="width:25rem; background-color: #ffffff;"  src="https://tussorpresas.com/wp-content/uploads/2020/04/Nequi-Tus-Sorpresas.png" />
                     </div>
                     <div>
                         <h3 class="featurette-heading">¿Buscas algo?</h3>
                         <p class="text-muted">Utiliza este buscador:</p>
                         <form method="get" id="searchform" action="[!urlblog]/">
                             <p>
-                                <input type="text" value="Escribe tu búsqueda..." name="s" id="searchbox"
-                                    onfocus="this.value=''" />
+                                <input type="text" value="Escribe tu búsqueda..." name="s" id="searchbox"   onfocus="this.value=''" />
                                 <input type="submit" class="submitbutton" value="Buscar" />
                             </p>
                         </form>
@@ -704,38 +450,26 @@
                     <h3 class="featurette-heading">Redes Sociales</h3>
                     <p class="text-muted"></p>
                     <ul class="nav">
-                        <li><a href="https://www.facebook.com/ciat.teatridanza" target="_blank"><img
-                                    src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-64.png"
-                                    class="img-fluid" /></a></li>
-                        <li><a href="https://www.instagram.com/teatridanza/" target="_blank"><img
-                                    src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-64.png"
-                                    class="img-fluid" /></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCq1EYKVMMpo-4Ohp4Knt1Wg/featured"
-                                target="_blank"><img
-                                    src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_gray-64.png"
-                                    class="img-fluid" /></a></li>
+                        <li><a href="https://www.facebook.com/ciat.teatridanza" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-64.png" class="img-fluid" /></a></li>
+                        <li><a href="https://www.instagram.com/teatridanza/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-64.png" class="img-fluid" /></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCq1EYKVMMpo-4Ohp4Knt1Wg/featured"  target="_blank"><img  src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_gray-64.png" class="img-fluid" /></a></li>
                     </ul>
                     <p class="text-muted"></p>
                     <div style="background-color: #ffffff;width:25rem;">
-                        <img style="width:25rem;"
-                            src="https://idartes.gov.co/sites/default/files/2020-02/logo_idartes_2020.png" />
+                        <img style="width:25rem;"  src="https://idartes.gov.co/sites/default/files/2020-02/logo_idartes_2020.png" />
                     </div>
                     <div>
-                        <img style="width:25rem;"
-                            src="http://www.museoscolombianos.gov.co/Style%20Library/fortalecimiento/images/logo-mincultura.gif" />
+                        <img style="width:25rem;"  src="http://www.museoscolombianos.gov.co/Style%20Library/fortalecimiento/images/logo-mincultura.gif" />
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <h3 class="featurette-heading">Ubicación</h3>
-                <p class="text-muted"></p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.405091240727!2d-74.0172317!3d4.6649636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1fb29923298cbfe!2sCIAT%20TEATRIDANZA!5e0!3m2!1ses-419!2sco!4v1598669999247!5m2!1ses-419!2sco"
-                    style="width:100%!important; min-height: 500px;" frameborder="0" style="border:0;"
-                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+                <div class="col-md-12">
+                    <h3 class="featurette-heading">Ubicación</h3>
+                    <p class="text-muted"></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.405091240727!2d-74.0172317!3d4.6649636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1fb29923298cbfe!2sCIAT%20TEATRIDANZA!5e0!3m2!1ses-419!2sco!4v1598669999247!5m2!1ses-419!2sco" style="width:100%!important; min-height: 500px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             <hr class="featurette-divider">
-            <!-- /END THE FEATURETTES -->
+            <!-- /END THE FEATURETTES -->  
         </div><!-- /.container -->
         <!-- FOOTER -->
         <div class="row featurette">
@@ -747,13 +481,10 @@
                     <h2>Contador de visitas</h2>
                     <p>
                     <div id="sfctu4hwrde54w1rj1ujndfp3f412zh6rx6"></div>
-                    <script type="text/javascript"
-                        src="https://counter3.stat.ovh/private/counter.js?c=tu4hwrde54w1rj1ujndfp3f412zh6rx6&down=async"
-                        async></script>
+                    <script type="text/javascript" src="https://counter3.stat.ovh/private/counter.js?c=tu4hwrde54w1rj1ujndfp3f412zh6rx6&down=async" async></script>
                     <noscript>
                         <a href="https://www.contadorvisitasgratis.com" title="contador de visitas">
-                            <img src="https://counter3.stat.ovh/private/contadorvisitasgratis.php?c=tu4hwrde54w1rj1ujndfp3f412zh6rx6"
-                                border="0" title="contador de visitas" alt="contador de visitas">
+                            <img src="https://counter3.stat.ovh/private/contadorvisitasgratis.php?c=tu4hwrde54w1rj1ujndfp3f412zh6rx6"   border="0" title="contador de visitas" alt="contador de visitas">
                         </a>
                     </noscript>
                     </p>
@@ -764,13 +495,10 @@
             </div>
             <div class="col-md-3 order-md-4">
                 <p class="float-right">
-                <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 rounded"
-                    style="font-size: 2em">
+                <div class="d-flex align-items-center justify-content-center p-3 py-5 mb-2 rounded"   style="font-size: 2em">
                     <a href="#">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill text-white"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z">
                             </path>Back to top
                         </svg>
                     </a>
@@ -779,16 +507,12 @@
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"  crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.navbar-nav li').addClass('nav-item'); $('.navbar-nav a').addClass('nav-link'); $('.featurette-heading a').addClass('badge-dark'); $('.muted a').addClass('badge-dark'); $('.topTitle a').addClass('badge-dark'); $('.float-right a').addClass('badge-dark'); $('.flex-column li').addClass('nav-item'); $('.flex-column a').addClass('nav-link'); $('.flex-column a').addClass('badge-dark'); $('.flex-column a').addClass('nav-link'); $('.enlaces a').addClass('badge-dark'); $('.enlaces a').addClass('nav-link'); $('.enlaces li').addClass('nav-item'); $('.enlaces ul').addClass('nav flex-column');
+        $(document).ready(function () {  $('.navbar-nav li').addClass('nav-item');   $('.navbar-nav a').addClass('nav-link');   $('.featurette-heading a').addClass('badge-dark');   $('.muted a').addClass('badge-dark');   $('.topTitle a').addClass('badge-dark');   $('.float-right a').addClass('badge-dark');   $('.flex-column li').addClass('nav-item');   $('.flex-column a').addClass('nav-link');   $('.flex-column a').addClass('badge-dark');   $('.flex-column a').addClass('nav-link');   $('.enlaces a').addClass('badge-dark');   $('.enlaces a').addClass('nav-link');   $('.enlaces li').addClass('nav-item');   $('.enlaces ul').addClass('nav flex-column');
 
-            $('a').addClass('badge-dark');
-        });
+            $('a').addClass('badge-dark'); });
     </script>
 
 </html>
